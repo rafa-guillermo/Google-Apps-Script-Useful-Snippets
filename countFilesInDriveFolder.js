@@ -2,8 +2,8 @@
 /**
  * Returns number of files in a given Drive folder
  * Needs Advanced Drive Service to run
- * @param  {String} folderId A Drive folder ID
- * @return {Number} count number of files in given Drive folder
+ * @param  {String} folderId - A Drive folder ID
+ * @return {Number} count - number of files in given Drive folder
  */
 function countFilesInFolder(folderId) {
   var folder = Drive.Children.list(folderId);
