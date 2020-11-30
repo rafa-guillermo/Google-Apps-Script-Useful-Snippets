@@ -9,3 +9,9 @@ A collection of small functions and/or classes to help along with development in
 
 - Takes Google Drive folder ID as parameter.
 - Returns the number of items in the folder.
+
+**UrllFetchApp:**
+
+`getLocation()`:
+
+- Returns end location of a URL if passed through shortener
