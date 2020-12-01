@@ -16,6 +16,11 @@ A collection of small functions and/or classes to help along with development in
 
 - Returns number of formulae in all sheets of a Spreadsheet file.
 
+[`convertSheetToXlsx()`](https://github.com/rafa-guillermo/Google-Apps-Script-Useful-Snippets/blob/main/sheets-snippets/convertSheetToXlsx.js):
+
+- Takes Spreadsheet ID as parameter
+- Saves `.xlsx` version to user's Drive
+
 **UrlFetchApp:**
 
 [`getLocation()`](https://github.com/rafa-guillermo/Google-Apps-Script-Useful-Snippets/blob/main/urlfetchapp-snippets/urlShortenerReversal.js):
