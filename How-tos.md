@@ -5,7 +5,8 @@ Explanations on how to do a multitude of things on the Google Workspace Platform
 ### Contents:
 - How to create an Installable Trigger
 
-*How to create an Installable Trigger:*
+
+**How to create an Installable Trigger:**
 From the Tools > Script editor menu item, you can create a function with whatever code you wish to execute on trigger:
 
 ```
