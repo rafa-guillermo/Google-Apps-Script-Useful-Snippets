@@ -6,7 +6,7 @@
  */
 function countFilesInFolder(folderId) {
   var folder = Drive.Children.list(folderId);
-  var countfolder.items.length;
+  var count = folder.items.length;
   var tmp = count;
   
   do {
