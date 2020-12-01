@@ -1,4 +1,3 @@
-
 /**
  * Returns number of files in a given Drive folder
  * Needs Advanced Drive Service to run
