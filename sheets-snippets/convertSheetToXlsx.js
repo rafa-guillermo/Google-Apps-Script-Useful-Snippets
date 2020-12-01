@@ -1,5 +1,5 @@
 /**
- * Returns final location of given URL
+ * Converts Google Sheets file to Microsoft Excel Format and saves to Drive
  * Needs Advanced Drive Service to run
  * @param  {String} ssID - Spreadsheet ID for export
  * @return {Number}      - returns exit code 0 if successful, -1 if failed
