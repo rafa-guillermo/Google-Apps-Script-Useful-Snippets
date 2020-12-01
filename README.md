@@ -5,24 +5,29 @@ A collection of small functions and/or classes to help along with development in
 
 **Drive:**
 
-[`countFilesInFolder()`](https://github.com/rafa-guillermo/Google-Apps-Script-Useful-Snippets/blob/main/drive-snippets/countFilesInDriveFolder.js):
+[Count all Files in Google Drive Folder - `countFilesInFolder()`](https://github.com/rafa-guillermo/Google-Apps-Script-Useful-Snippets/blob/main/drive-snippets/countFilesInDriveFolder.js):
 
 - Takes Google Drive folder ID as parameter.
 - Returns the number of items in the folder.
 
 **Sheets:**
 
-[`getAllFormulae()`](https://github.com/rafa-guillermo/Google-Apps-Script-Useful-Snippets/blob/main/sheets-snippets/countFormulaeInSpreadsheet.js):
+[Count number of Formulae in Google Spreadsheet - `getAllFormulae()`](https://github.com/rafa-guillermo/Google-Apps-Script-Useful-Snippets/blob/main/sheets-snippets/countFormulaeInSpreadsheet.js):
 
 - Returns number of formulae in all sheets of a Spreadsheet file.
 
-[`convertSheetToXlsx()`](https://github.com/rafa-guillermo/Google-Apps-Script-Useful-Snippets/blob/main/sheets-snippets/convertSheetToXlsx.js):
+[Convert Google Sheet to `.xlsx` Format - `convertSheetToXlsx()`](https://github.com/rafa-guillermo/Google-Apps-Script-Useful-Snippets/blob/main/sheets-snippets/convertSheetToXlsx.js):
 
-- Takes Spreadsheet ID as parameter
+- Takes Spreadsheet ID and Drive folder ID as parameters
 - Saves `.xlsx` version to user's Drive
+
+[Convert `.xlsx` File to Google Sheets Format - `convertXlsxToSheet()`](https://github.com/rafa-guillermo/Google-Apps-Script-Useful-Snippets/blob/main/sheets-snippets/convertXlsxToSheet.js):
+
+- Takes `.xlsx` File ID and Drive folder ID as parameters
+- Saves converted Google Sheet to user's Drive
 
 **UrlFetchApp:**
 
-[`getLocation()`](https://github.com/rafa-guillermo/Google-Apps-Script-Useful-Snippets/blob/main/urlfetchapp-snippets/urlShortenerReversal.js):
+[Obtain Final Location of given URL - `getLocation()`](https://github.com/rafa-guillermo/Google-Apps-Script-Useful-Snippets/blob/main/urlfetchapp-snippets/urlShortenerReversal.js):
 
 - Returns end location of a URL if passed through shortener.
