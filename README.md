@@ -31,3 +31,8 @@ A collection of small functions and/or classes to help along with development in
 [Obtain Final Location of given URL - `getLocation()`](https://github.com/rafa-guillermo/Google-Apps-Script-Useful-Snippets/blob/main/urlfetchapp-snippets/urlShortenerReversal.js):
 
 - Returns end location of a URL if passed through shortener.
+
+[Turn JSON object of URL parameter-value pairs into URL parameter string - `urlParameterfy()`](https://github.com/rafa-guillermo/Google-Apps-Script-Useful-Snippets/blob/main/urlfetchapp-snippets/urlParameterfy.js)
+
+- Takes JSON object of parameters and their values
+- Returns single string of all URL parameters ready for concatenation with URL
