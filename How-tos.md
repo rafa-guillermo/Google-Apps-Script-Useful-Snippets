@@ -29,8 +29,7 @@ Hub. Click the `+ Add Trigger` button in the bottom right and set up the trigger
    - Time-driven
    - Form calendar
    
-   **NB:** the selections available from here will be dependent on the context of the script. For example, "From spreadsheet" will not show up on
-   a script bound to a document, whereas "From document" will. Time-driven and triggers from Calendar show up regardless of context.
+ **NB:** the selections available from here will be dependent on the context of the script. For example, "From spreadsheet" will not show up on a script bound to a document, whereas "From document" will. Time-driven and triggers from Calendar show up regardless of context.
  - Select event type: This will be dependent on which triggers are available for a given script's context. 
  Available types of triggers can be seen [in the official docs](https://developers.google.com/apps-script/guides/triggers#available_types_of_triggers)
  
