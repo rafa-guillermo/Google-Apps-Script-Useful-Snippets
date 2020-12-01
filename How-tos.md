@@ -5,6 +5,7 @@ Explanations on how to do a multitude of things on the Google Workspace Platform
 ### Contents:
 - How to create an Installable Trigger
 
+____
 
 **How to create an Installable Trigger:**
 
