@@ -41,3 +41,14 @@ Hub. Click the `+ Add Trigger` button in the bottom right and set up the trigger
  - Select interval: dependent on the type of timer.
 
 Click `Save` and you're done!
+
+___
+
+**How to create a button which runs a function in Sheets:**
+
+1. From the Sheets UI, Go to the `Insert > Drawing` menu item and create a shape; any shape will do, this will act as your button. 
+2. Press `Save and Close` to add this to your sheet.
+3. Move the newly-added drawing to where you would like. In the top-right of the drawing, you will see the vertical ellipsis menu (`⋮`). Click this, and then click `Assign script`.
+4. In the new window, type the name of your script without parentheses (for example `myFunction`) and press `OK`.
+
+Now, each time you click the button, the script will run. 
