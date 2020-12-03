@@ -33,7 +33,7 @@ A collection of small functions and/or classes to help along with development in
 - Takes `.xlsx` File ID and Drive folder ID as parameters
 - Saves converted Google Sheet to user's Drive
 
-**Sheets - Custom Functions:**
+**Sheets (Custom Functions):**
 
 [Filter a range of values out of another range of values - `filterValues()`](https://github.com/rafa-guillermo/Google-Apps-Script-Useful-Snippets/blob/main/sheets-custom-functions/filterValues.js)
 
