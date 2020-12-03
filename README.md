@@ -3,6 +3,13 @@ A collection of small functions and/or classes to help along with development in
 
 ### Function list:
 
+**Docs:**
+
+[Count words in a Google Doc - `countWords()`](https://github.com/rafa-guillermo/Google-Apps-Script-Useful-Snippets/blob/main/docs-snippets/wordCounter.js):
+
+- Takes Google Doc File ID
+- Returns the number of words in the Document
+
 **Drive:**
 
 [Count all Files in Google Drive Folder - `countFilesInFolder()`](https://github.com/rafa-guillermo/Google-Apps-Script-Useful-Snippets/blob/main/drive-snippets/countFilesInDriveFolder.js):
