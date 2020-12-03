@@ -6,10 +6,8 @@
  * Takes in two ranges, A and B, and returns array C where
  * C contains values from A with the values from B removed
  * @param  {String[][]} rangeToFilter   - A Google Sheets Column Range 
- * @param  {String[][]} itemsToFilter   - A Google Sheets Column Range containing
- *                                        values to filter out of rangeToFilter
- * @return {String[][]} filteredList    - 2D array of values taken from rangeToFilter
- *                                        with values from itemsToFilter removed
+ * @param  {String[][]} itemsToFilter   - A Google Sheets Column Range containing values to filter out of rangeToFilter
+ * @return {String[][]} filteredList    - 2D array of values taken from rangeToFilter with values from itemsToFilter removed
  */
 function LISTFILTER(rangeToFilter, itemsToFilter) {
   rangeToFilter = rangeToFilter.flat();
