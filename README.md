@@ -17,7 +17,7 @@ A collection of small functions and/or classes to help along with development in
 - Takes Google Drive folder ID as parameter.
 - Returns the number of items in the folder.
 
-[Permanently delete the files in a drive folder (non recursive) using batch API -  `deleteFiles()`](https://github.com/rafa-guillermo/Google-Apps-Script-Useful-Snippets/tree/main/drive-snippets/deleteFiles)
+[Permanently delete the files in a drive folder (non recursive) using batch API -  `deleteFiles()`](https://github.com/rafa-guillermo/Google-Apps-Script-Useful-Snippets/tree/main/drive-snippets/deleteFiles):
 
 <sup>*Committed by [Martí Angelats i Ribera](https://github.com/copying).*</sup>
 
