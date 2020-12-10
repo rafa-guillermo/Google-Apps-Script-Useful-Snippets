@@ -20,13 +20,11 @@ ___
 - Returns the number of items in the folder.
 
 [Permanently delete the files in a drive folder (non recursive) using batch API -  `deleteFiles()`](https://github.com/rafa-guillermo/Google-Apps-Script-Useful-Snippets/tree/main/drive-snippets/deleteFiles):
+<sup>*Committed by: [Martí Angelats i Ribera](https://github.com/copying).*</sup>
 
 - Takes Google Drive Folder Object as parameter
 - Takes optional separate parameter `file => file.getName() === 'File to remove'` removing all files named "File to remove" from the root folder.
 - Returns `undefined`
-
-<sup>*Committed by: [Martí Angelats i Ribera](https://github.com/copying).*</sup>
-
 
 ___
 
