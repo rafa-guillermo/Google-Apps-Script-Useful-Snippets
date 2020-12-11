@@ -31,14 +31,14 @@ async function deleteFiles(folder, filter = () => true) {
 
     // Limit of requests per bulk reached
     if (bulk.length === bulkLimit) {
-      sendBulk_(bulk)
+      promises.push(sendBulk_(bulk))
       bulk = []
     }
   }
 
   // Send bulk with the remaining requests
   if (bulk.length > 0) {
-    sendBulk_(bulk)
+    promises.push(sendBulk_(bulk))
   }
 
   await Promise.all(promises)
@@ -48,7 +48,6 @@ async function deleteFiles(folder, filter = () => true) {
 /// Sends a bulk request deleting all the files
 const sendBulk_ = makeAsync(function (files) {
   const boundary = 'batch_manual_delete_multi_files_boundary'
-  const token = ScriptApp.getOAuthToken()
   let payload = ''
   for (let i = 0; i < files.length; i++) {
     const id = files[i].getId()
@@ -58,8 +57,7 @@ const sendBulk_ = makeAsync(function (files) {
     payload += `Content-Type: application/http\r\n`
     payload += `Content-ID: ${i}\r\n`
     payload += `\r\n`
-    payload += `DELETE  https://www.googleapis.com/drive/v3/files/${id}\r\n`
-    payload += `Authorization: Bearer ${token}\r\n`
+    payload += `DELETE  /drive/v3/files/${id}\r\n`
     payload += `\r\n`
   }
 
@@ -71,6 +69,9 @@ const sendBulk_ = makeAsync(function (files) {
     method: 'post',
     contentType: `multipart/mixed; boundary=${boundary}`,
     payload: Utilities.newBlob(payload).getBytes(),
+    headers: {
+      'Authorization': `Bearer ${ScriptApp.getOAuthToken()}`
+    },
     muteHttpExceptions: true
   };
 
@@ -86,20 +87,20 @@ const sendBulk_ = makeAsync(function (files) {
  */
 
 // Remove all files from root.
-function usageExample1() {
-  deleteFiles(DriveApp.getRootFolder())
+async function usageExample1() {
+  await deleteFiles(DriveApp.getRootFolder())
 }
 
 
 // Remove all files from a folder having its ID.
-function usageExample2() {
-  deleteFiles(DriveApp.getFolderById('xxx'))
+async function usageExample2() {
+  await deleteFiles(DriveApp.getFolderById('xxx'))
 }
 
 
 // Remove all files named "File to remove" from the root folder.
-function usageExample3() {
-  deleteFiles(DriveApp.getRootFolder(), file => file.getName() === 'File to remove');
+async function usageExample3() {
+  await deleteFiles(DriveApp.getRootFolder(), file => file.getName() === 'File to remove');
 }
 
 
