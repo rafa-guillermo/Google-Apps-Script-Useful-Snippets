@@ -7,8 +7,11 @@
  */
 function convertSheetToXlsx(ssID, folderId) {
   try {
+    // Define export endpoint and method.
     var url = "https://docs.google.com/feeds/download/spreadsheets/Export?key=";
     var exportMethod = "&exportFormat=xlsx";
+    
+    // Create options object for UrlFetch
     var parameters = {
       method: "get",
       headers: {
@@ -16,11 +19,12 @@ function convertSheetToXlsx(ssID, folderId) {
       },
       muteHttpExceptions: true
     };
-
+   
+    // Get the file as a Blob and set name of file
     var fileAsBlob = UrlFetchApp.fetch(url + ssID + exportMethod, parameters).getBlob();
-
     fileAsBlob.setName(SpreadsheetApp.openById(ssID).getName() + ".xlsx");
 
+    // Create file metadata, set .xlsx Mimetype and ID of folder in which to be inserted
     var fileData = {
       title: SpreadsheetApp.openById(ssID).getName() + ".xlsx",
       mimeType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
@@ -37,6 +41,7 @@ function convertSheetToXlsx(ssID, folderId) {
     return 0;
   }
   catch (err) {
+    // Log error in case of unintended halt
     console.error(err);
     return -1;
   }
