@@ -5,6 +5,11 @@
  */
  function countWords(docId) {
   let doc = DocumentApp.openById(docId)().getBody().getText();
+  
+  // Matches all strings of the form:
+  // Word boundary, One or more non-whitespace character, Word boundary
   let count = (doc.match(/\b\S+\b/g) || []).length;
+  
+  // return length of matches array
   return count;
 }
