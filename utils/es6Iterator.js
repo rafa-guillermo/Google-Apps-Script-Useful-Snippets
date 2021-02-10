@@ -10,7 +10,7 @@
  * @param gasIt The Google Apps Script iterator
  * @returns A native ES6 iterable
  */
-function it(gasIt) {
+function iter(gasIt) {
     return {
         *[Symbol.iterator]() {
             while (gasIt.hasNext()) {
