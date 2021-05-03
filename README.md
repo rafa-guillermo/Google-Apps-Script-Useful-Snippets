@@ -44,6 +44,10 @@ ___
 - Takes `.xlsx` File ID and Drive folder ID as parameters
 - Saves converted Google Sheet to user's Drive
 
+[Get Sheet by GID - `getSheetById()`](https://github.com/rafa-guillermo/Google-Apps-Script-Useful-Snippets/blob/main/sheets-snippets/getSheetById.js)
+
+- Takes a gid as a string
+- Returns the Sheet object of the sheet in the current Spreadsheet with the given gid
 ___
 
 **Sheets (Custom Functions):**
