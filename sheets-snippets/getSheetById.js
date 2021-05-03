@@ -6,5 +6,5 @@
 function getSheetById(id) {
   return SpreadsheetApp.getActiveSpreadsheet().getSheets().filter(function(sheet) {
     return sheet.getSheetId() == id
-  })[0];
+  })[0]
 }
